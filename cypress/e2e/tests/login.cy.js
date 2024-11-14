@@ -5,7 +5,7 @@ describe('Prueba de Login usando POM', () => {
     beforeEach(function () {
         // Carga el fixture de datos de usuario
         cy.fixture('usuarios').as('usuariosData');
-    });
+    }); 
 
     it('Login con usuario estándar', function () {
         // Visita la página de login
@@ -15,9 +15,9 @@ describe('Prueba de Login usando POM', () => {
         const usuario = this.usuariosData.usuario1;
         LoginPage.login(usuario.username, usuario.password)
 
-        //LoginPage.enterUsername(usuario.username);
-        //LoginPage.enterPassword(usuario.password);
-        //LoginPage.clickLogin();
+       /*  LoginPage.enterUsername('standard_user');
+        LoginPage.enterPassword('secret_sauce');
+        LoginPage.clickLogin(); */
 
         // Verificación de la URL después del login
         cy.url().should('eq', 'https://www.saucedemo.com/v1/inventory.html');
