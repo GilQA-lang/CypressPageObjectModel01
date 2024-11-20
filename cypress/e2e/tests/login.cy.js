@@ -1,5 +1,10 @@
 import InventarioPage from '../pages/InventarioPage';
 import LoginPage from '../pages/loginPage';
+import cartPage from '../pages/cartPage';
+import cartView from '../pages/cartView';
+//import cartCheckout from '../pages/cartCheckout';
+//import checkoutFinishPage from '../pages/checkoutFinishPage';
+
 
 describe('Prueba de Login usando POM', () => {
     beforeEach(function () {
@@ -26,10 +31,27 @@ describe('Prueba de Login usando POM', () => {
         //InventarioPage.openMenu(); 
         //InventarioPage.clickLogout(); 
 
+        //cartPage.clickAddcart();
+        //Verifrico página de inventario
+        //cy.url().should('eq', 'https://www.saucedemo.com/v1/inventory.html');
+        
+        
+        //cartView.clickcartView();
+
+
+        //cartCheckout.clickcartCheckout();
+
+
+        //checkoutFinishPage.clickcheckoutFinishPage()
+                     
+        
         InventarioPage.logout();
 
         // Verificación de que el logout fue exitoso (regreso a la página de login)
         cy.url().should('eq', 'https://www.saucedemo.com/v1/index.html');
 
     });
+
+
+
 });
