@@ -23,7 +23,9 @@ class CheckoutPage {
       validateCompletionPage() {
         cy.url().should('include', '/checkout-complete.html');
         cy.get('.complete-header').should('be.visible');
+
       }
+      
     }
 }
     export default new CheckoutPage();
