@@ -2,12 +2,11 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
     reporter: 'cypress-mochawesome-reporter',
-    reporterOptions:{
+   /* reporterOptions:{
     overwrite: true,
     reportFilename: 'reporte-tes',
     timestamp: 'shorDate',
-
-  }
+  }*/
   
     e2e: {
     screenshotOnRunFailure:true,

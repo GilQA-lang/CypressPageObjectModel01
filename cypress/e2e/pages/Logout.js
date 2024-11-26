@@ -1,5 +1,5 @@
 class Logout {
-    logout() {
+    clicklogout() {
       cy.get('.bm-burger-button').click();
       cy.get('#logout_sidebar_link').click();
     }
