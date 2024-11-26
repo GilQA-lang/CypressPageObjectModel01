@@ -49,17 +49,18 @@ describe('Prueba de Login usando POM', () => {
         const usuario = this.usuariosData.usuario1;
         LoginPage.login(usuario.username, usuario.password)
 
-       /*  LoginPage.enterUsername('standard_user');
+        /*LoginPage.enterUsername('standard_user');
         LoginPage.enterPassword('secret_sauce');
-        LoginPage.clickLogin(); */
+        LoginPage.clickLogin();*/
 
         // Verificación de la URL después del login
-        cy.url().should('eq', 'https://www.saucedemo.com/v1/inventory.html');
+        //cy.url().should('eq', 'https://www.saucedemo.com/v1/inventory.html');
 
         
-        cartPage.clickAddcart();
+        cartPage.clickcartPage();
+        //cartPage.clickAddCart();
         //Verifrico página de inventario
-        //cy.url().should('eq', 'https://www.saucedemo.com/v1/inventory.html');
+        cy.url().should('eq', 'https://www.saucedemo.com/v1/cart.html');
         
         
         // Logout
@@ -67,20 +68,20 @@ describe('Prueba de Login usando POM', () => {
         //InventarioPage.clickLogout(); 
 
                     
-        //cartView.clickcartView();
+        cartView.clickcartView();
 
         //cartCheckout.clickcartCheckout();
 
-        checkoutPage.clickcheckoutPage();
+        //checkoutPage.clickcheckoutPage();
 
         //checkoutFinishPage.clickcheckoutFinishPage()
 
                        
         
-        //InventarioPage.logout();
+        InventarioPage.logout();
 
         // Verificación de que el logout fue exitoso (regreso a la página de login)
-        //cy.url().should('eq', 'https://www.saucedemo.com/v1/index.html');
+        cy.url().should('eq', 'https://www.saucedemo.com/v1/index.html');
 
    });
 
