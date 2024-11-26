@@ -73,6 +73,10 @@ describe('Prueba de Login usando POM', () => {
         // Verificación de que el logout fue exitoso (regreso a la página de login)
        //cy.url().should('eq', 'https://www.saucedemo.com/v1/index.html');
 
+
+       //Screeshot
+       cy.screenshot('screenshot-3')
+
     });
 
 

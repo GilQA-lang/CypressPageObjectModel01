@@ -30,6 +30,11 @@ describe('Add to Cart Tests', () => {
     clicklogout();
     //cartPage.goTocartCheckout();
     //cartPage.validateCartPage();
+
+
+    //Screeshot
+    cy.screenshot('screenshot-2')
+
   });
 });
 

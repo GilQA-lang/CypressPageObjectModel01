@@ -11,6 +11,8 @@ class cartView {
         //Continuar comprando
         //cy.get('[class="btn_secondary"]').contains('Continue Shopping').click();
         //cy.url().should('eq', 'https://www.saucedemo.com/v1/inventory.html');            
+    
+        
     }
      
   }

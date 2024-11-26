@@ -4,10 +4,13 @@ class InventarioPage {
   
     openMenu() {
       cy.get(this.menuButton).click();
+
+   
     }
   
     clickLogout() {
       cy.get(this.logoutLink).click();
+   
     }
   
     logout() {
@@ -15,6 +18,6 @@ class InventarioPage {
       this.clickLogout();
     }
   }
-  
+
   export default new InventarioPage();
   

@@ -16,6 +16,8 @@ class cartCheckout {
         cy.url().should('eq', 'https://www.saucedemo.com/v1/checkout-complete.html');
         cy.contains('.complete-header', 'THANK YOU FOR YOUR ORDER')
 
+
+   
     }
      
   }
