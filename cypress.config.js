@@ -1,9 +1,23 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  e2e: {
+    reporter: 'cypress-mochawesome-reporter',
+    reporterOptions:{
+    overwrite: true,
+    reportFilename: 'reporte-tes',
+    timestamp: 'shorDate',
+
+  }
+  
+    e2e: {
+    screenshotOnRunFailure:true,
+    screenshotsFolder:"cypress/screenshosts,",
+    downloadsFolder: "cypress/this.downloads/test",
+
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      require('cypress-mochawesome-reporter/plugin')(on);
+
     },
   },
 });

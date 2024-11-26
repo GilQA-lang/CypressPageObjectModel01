@@ -1,4 +1,4 @@
-class InventoryPage {
+class InventarioPage {
     menuButton = '.bm-burger-button';
     logoutLink = '#logout_sidebar_link';
   
@@ -16,5 +16,5 @@ class InventoryPage {
     }
   }
   
-  export default new InventoryPage();
+  export default new InventarioPage();
   
